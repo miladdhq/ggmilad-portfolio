@@ -1,0 +1,12 @@
+# editor / OS noise
+.DS_Store
+Thumbs.db
+*.swp
+*~
+.vscode/
+.idea/
+
+# local working copies — history lives in git, not in sidecar files
+*.backup.html
+*.bak
+*.orig
