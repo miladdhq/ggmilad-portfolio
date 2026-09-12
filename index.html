@@ -327,6 +327,12 @@ html[dir="ltr"] .gg-line{background:linear-gradient(to right,rgba(79,131,255,.09
 .chips{display:flex;flex-wrap:wrap;gap:8px;position:relative}
 .chip{font-family:var(--font-mono);direction:ltr;font-size:.67rem;color:var(--ice);border:1px solid var(--line);border-radius:var(--r-pill);padding:4px 11px;background:rgba(122,160,255,.05);transition:border-color .2s,background .2s}
 .card:hover .chip{border-color:rgba(122,168,255,.35);background:rgba(122,160,255,.09)}
+.card-donate{border-color:rgba(255,180,84,.28)}
+.card-donate:hover{border-color:rgba(255,180,84,.6);box-shadow:0 20px 54px rgba(0,0,0,.5),0 0 0 1px rgba(255,180,84,.2),0 0 24px rgba(255,180,84,.25)}
+.card-link{position:relative;display:inline-flex;align-items:center;gap:7px;margin-top:18px;font-weight:700;font-size:.92rem;color:#ffd28a;padding:9px 16px;border-radius:var(--r-pill);border:1px solid rgba(255,180,84,.4);background:rgba(255,180,84,.07);transition:background .2s,border-color .2s,transform .2s var(--ease)}
+.card-link:hover{background:rgba(255,180,84,.16);border-color:rgba(255,180,84,.8);transform:translateY(-2px)}
+.nav-links a.nav-donate{color:#ffd28a}
+.nav-links a.nav-donate::after{background:linear-gradient(90deg,#ffd28a,#ff7a3d)}
 
 /* ============================================================
    SKILLS
@@ -483,6 +489,7 @@ footer{padding-bottom:max(24px,env(safe-area-inset-bottom))}
       <a href="#skills" data-i18n="nav.skills">مهارت‌ها</a>
       <a href="#roadmap" data-i18n="nav.roadmap">نقشه راه</a>
       <a href="#contact" data-i18n="nav.contact">تماس</a>
+      <a href="https://donate.ggon.top" class="nav-donate" data-i18n="nav.donate">حمایت</a>
     </div>
     <div class="nav-side">
       <div class="status-pill"><span class="status-dot"></span> <span data-i18n="nav.status">آماده همکاری</span></div>
@@ -515,6 +522,7 @@ footer{padding-bottom:max(24px,env(safe-area-inset-bottom))}
     <a href="#skills"><b>03</b><span data-i18n="nav.skills">مهارت‌ها</span></a>
     <a href="#roadmap"><b>04</b><span data-i18n="nav.roadmap">نقشه راه</span></a>
     <a href="#contact"><b>05</b><span data-i18n="nav.contact">تماس</span></a>
+    <a href="https://donate.ggon.top"><b>06</b><span data-i18n="nav.donate">حمایت</span></a>
   </nav>
   <div class="drawer-foot">
     <div class="status-pill" style="display:flex"><span class="status-dot"></span> <span data-i18n="nav.status">آماده همکاری</span></div>
@@ -658,6 +666,15 @@ footer{padding-bottom:max(24px,env(safe-area-inset-bottom))}
       <h3 data-i18n="p4.t">پیشی‌لند</h3>
       <p data-i18n="p4.d">دنیای تعاملی گربه‌ها — با یه گربه‌ی آشوب‌گر و خودشیفته به اسم میلاد و رفیق قدیمیش، علف هرز. جایی که خلاقیت هیچ سقفی نداره.</p>
       <div class="chips"><span class="chip">JavaScript</span><span class="chip">Animation</span><span class="chip">Storytelling</span></div>
+    </article>
+
+    <article class="card card-donate reveal" data-cat="web">
+      <div class="card-mark">🧡</div>
+      <div class="card-top"><span class="card-tag">SUPPORT / LIVE</span><span class="badge badge-ship" data-i18n="badge.ship">✅ شیپ شده</span></div>
+      <h3 data-i18n="p23.t">حمایت — چراغِ پروژه‌ها</h3>
+      <p data-i18n="p23.d">صفحه‌ی حمایتِ کارت‌به‌کارت با نوارِ هدف، دیوارِ حامی‌ها و پنلِ تایید. رسیدها بیرونِ webroot می‌شینن، EXIF‌شون پاک می‌شه و فقط با نشستِ ادمین خونده می‌شن. همین صفحه‌ایه که سرورِ پیشی‌لند رو روشن نگه می‌داره.</p>
+      <div class="chips"><span class="chip">FastAPI</span><span class="chip">SQLite</span><span class="chip">Vanilla JS</span><span class="chip">nginx</span></div>
+      <a class="card-link" href="https://donate.ggon.top" target="_blank" rel="noopener noreferrer"><span data-i18n="p23.cta">حمایت می‌کنم</span><span class="ltr">↗</span></a>
     </article>
 
     <article class="card reveal" data-cat="fun">
@@ -890,7 +907,7 @@ footer{padding-bottom:max(24px,env(safe-area-inset-bottom))}
     fa:{
       'meta.title':'GGmilad — پورتفولیو | ggon.top',
       'meta.desc':'GGmilad — فول‌استک دولوپر. سایت، فروشگاه، ربات تلگرام؛ از ایده تا دیپلوی.',
-      'nav.about':'دربارم','nav.projects':'پروژه‌ها','nav.skills':'مهارت‌ها','nav.roadmap':'نقشه راه','nav.contact':'تماس',
+      'nav.about':'دربارم','nav.projects':'پروژه‌ها','nav.skills':'مهارت‌ها','nav.roadmap':'نقشه راه','nav.contact':'تماس','nav.donate':'حمایت',
       'nav.status':'آماده همکاری',
       'hero.tagline':'چیزای <span class="hl">باحال</span> برای وب می‌سازم',
       'hero.sub':'از ایده تا دیپلوی — سایت، فروشگاه، ربات تلگرام؛ هر چیزی که لازم باشه، از صفر تا صد.',
@@ -916,6 +933,9 @@ footer{padding-bottom:max(24px,env(safe-area-inset-bottom))}
       'p3.d':'فروشگاه تک‌صفحه‌ای با حال‌وهوای کاوایی و پنل ادمین برای مدیریت محصول‌ها. کیوت، ولی زیرش یه ساختار جدی کار می‌کنه.',
       'p4.t':'پیشی‌لند',
       'p4.d':'دنیای تعاملی گربه‌ها — با یه گربه‌ی آشوب‌گر و خودشیفته به اسم میلاد و رفیق قدیمیش، علف هرز. جایی که خلاقیت هیچ سقفی نداره.',
+      'p23.t':'حمایت — چراغِ پروژه‌ها',
+      'p23.d':'صفحه‌ی حمایتِ کارت‌به‌کارت با نوارِ هدف، دیوارِ حامی‌ها و پنلِ تایید. رسیدها بیرونِ webroot می‌شینن، EXIF‌شون پاک می‌شه و فقط با نشستِ ادمین خونده می‌شن. همین صفحه‌ایه که سرورِ پیشی‌لند رو روشن نگه می‌داره.',
+      'p23.cta':'حمایت می‌کنم',
       'p5.t':'ربات دانلودر مدیا',
       'p5.d':'ربات تلگرام برای دانلود از شبکه‌های اجتماعی — لینک می‌فرستی، فایل تحویل می‌گیری. ساده، سریع، بدون حاشیه.',
       'p6.t':'ربات مدیریت نمایشگاه خودرو',
@@ -975,7 +995,7 @@ footer{padding-bottom:max(24px,env(safe-area-inset-bottom))}
     en:{
       'meta.title':'GGmilad — Portfolio | ggon.top',
       'meta.desc':'GGmilad — full-stack developer. Websites, storefronts, Telegram bots; from idea to deploy.',
-      'nav.about':'About','nav.projects':'Work','nav.skills':'Skills','nav.roadmap':'Roadmap','nav.contact':'Contact',
+      'nav.about':'About','nav.projects':'Work','nav.skills':'Skills','nav.roadmap':'Roadmap','nav.contact':'Contact','nav.donate':'Support',
       'nav.status':'Open to work',
       'hero.tagline':'I build <span class="hl">bold</span> things for the web',
       'hero.sub':'From idea to deploy — websites, storefronts, Telegram bots. Whatever the project needs, end to end.',
@@ -1001,6 +1021,9 @@ footer{padding-bottom:max(24px,env(safe-area-inset-bottom))}
       'p3.d':'A single-page shop with a kawaii mood and an admin panel for managing products. Cute on the surface, serious architecture underneath.',
       'p4.t':'Pishiland',
       'p4.d':'An interactive cat world — starring a chaotic, self-obsessed cat named Milad and his old buddy, Weed the plant. A place where creativity has no ceiling.',
+      'p23.t':'Support — keeping the lights on',
+      'p23.d':'A card-to-card donation page with a goal bar, a supporters wall and an approval panel. Receipts live outside the webroot, get their EXIF stripped, and are only readable with an admin session. It is the page that keeps the Pishiland server running.',
+      'p23.cta':'Support the work',
       'p5.t':'Media Downloader Bot',
       'p5.d':'A Telegram bot for downloading from social networks — send a link, get the file. Simple, fast, no fuss.',
       'p6.t':'Car Dealership Manager Bot',
