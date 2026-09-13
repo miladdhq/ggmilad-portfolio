@@ -1,6 +1,6 @@
 {
   "site": {
-    "donate_url": "https://donate.ggon.top"
+    "donate_url": ""
   },
   "stats": [
     {
@@ -265,7 +265,7 @@
       "cat": "web",
       "wide": false,
       "extra_class": "card-donate",
-      "hidden": false,
+      "hidden": true,
       "chips": [
         "FastAPI",
         "SQLite",
