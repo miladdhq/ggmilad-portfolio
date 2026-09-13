@@ -6,8 +6,13 @@
 
 </div>
 
-A personal portfolio site built as **one self-contained HTML file** — all CSS,
-JavaScript, and content inlined. No build step, no dependencies, no backend.
+A personal portfolio site served as **one self-contained HTML file** — all CSS,
+JavaScript, and content inlined. No dependencies, no backend on the public site.
+
+The content that changes over time (project cards, roadmap levels, hero stats)
+lives in `content.json`; the design lives in `template.html`; `build.py` joins
+them into `index.html`. A small admin panel at `/admin` edits the JSON and
+publishes the result — see **Editing content** below.
 
 **Live:** <https://ggon.top>
 
@@ -47,14 +52,50 @@ a portfolio that looks like every other portfolio doesn't get remembered.
 ## Structure
 
 ```
-index.html    the site — everything lives here
-README.md     this file
+index.html        the site, as served — the build output, committed
+content.json      the data: projects, roadmap, hero stats, donate URL
+template.html     the design: everything else, with Jinja loops for the three regions
+build.py          render(content, template) → index.html   (python build.py > index.html)
+admin/            the panel: FastAPI app + single-file UI
+deploy/           systemd unit, nginx location, server setup script
+tools/migrate.py  the one-time split that produced content.json + template.html
+tests/            golden round-trip, schema, auth, publish, HTTP
 ```
+
+## Editing content · ویرایش محتوا
+
+**Content** — project cards, roadmap levels, hero stats, the donate URL — is
+edited in the panel at `https://ggon.top/admin`. Save writes `content.json`;
+Publish renders the site, backs up the previous version, replaces the live
+file atomically, and commits + pushes to this repo in the background. Restore
+brings back any of the last twenty publishes, content and site together.
+
+**Design** — layout, CSS, JS, the sections that rarely change — is edited in
+`template.html` here, then: commit, push, `git pull` on the server, Publish.
+
+The rule that keeps the two from fighting: never edit `content.json` in two
+places. The server's copy is the truth after launch; git follows it.
+
+To rebuild by hand (for a local check, or without the panel):
+
+```bash
+python -m venv .venv && .venv/bin/pip install -r requirements-dev.txt
+.venv/bin/python build.py > index.html
+.venv/bin/pytest
+```
+
+`tests/test_golden.py` proves the split is lossless: rendering the migrated
+content reproduces the original `index.html`, markup and both language
+dictionaries.
 
 ## Deploying · استقرار
 
-It's a static file, so deployment is a copy. Serve it as `index.html` from any
-web server:
+The public site is still a static file: nginx serves `/var/www/ggmilad/index.html`.
+The panel writes that file on Publish. First-time server setup is
+`deploy/setup.sh` (`key`, then `install`); the panel runs as the `ggadmin`
+system user on `127.0.0.1:9914` and nginx proxies only `/admin/` to it.
+
+Without the panel, deployment is still just a copy:
 
 ```bash
 scp index.html <user>@<host>:/var/www/ggmilad/index.html

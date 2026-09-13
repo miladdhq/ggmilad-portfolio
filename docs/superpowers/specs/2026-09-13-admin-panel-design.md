@@ -1,6 +1,6 @@
 # Admin panel for ggon.top — design
 
-**Date:** 2026-09-13 · **Status:** approved in conversation, implementing
+**Date:** 2026-09-13 · **Status:** implemented (plan: `docs/superpowers/plans/2026-09-13-admin-panel.md`)
 
 ## Why
 
@@ -63,9 +63,10 @@ dependency.** If the panel is down, ggon.top does not notice.
 - `hidden: true` keeps the record but renders nothing.
 - `link.url` empty → no card link. Non-empty → the `.card-link` anchor with
   the per-language label (this is what the donate card uses today).
-- `site.donate_url` empty → the nav "حمایت" link and the donate card are
-  both omitted. This is how the held-back donate work stays off the live
-  site until `donate.ggon.top` has an A record.
+- `site.donate_url` empty → the nav "حمایت" links are omitted. The donate
+  *card* is an ordinary project (`p23`, `extra_class: card-donate`) and is
+  controlled by its own `hidden` flag. Both stay off until `donate.ggon.top`
+  has an A record; then set the URL and unhide the card.
 - `stats[].count: true` emits `data-count`/`data-suffix` so the counter
   animation runs; `false` prints the value literally (the `∞`).
 - Locked roadmap items have no title: the template prints `road.locked`.

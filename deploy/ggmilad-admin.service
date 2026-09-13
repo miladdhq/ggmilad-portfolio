@@ -1,0 +1,56 @@
+[Unit]
+# پنل ادمینِ پورتفولیو — https://ggon.top/admin
+# نصب:  cp deploy/ggmilad-admin.service /etc/systemd/system/ && systemctl daemon-reload
+#       systemctl enable --now ggmilad-admin
+Description=GGmilad Admin — content panel for ggon.top
+Documentation=file:///opt/ggmilad-admin/README.md
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=ggadmin
+Group=www-data
+WorkingDirectory=/opt/ggmilad-admin
+EnvironmentFile=/opt/ggmilad-admin/.env
+Environment=GG_REPO_DIR=/opt/ggmilad-admin
+Environment=GG_LIVE_INDEX=/var/www/ggmilad/index.html
+Environment=GG_DATA_DIR=/opt/ggmilad-admin/data
+Environment=HOME=/var/lib/ggadmin
+
+# ‼️ workers must stay 1: the login lockout lives in this process's memory.
+# uvicorn listens on 127.0.0.1 only; nginx is the only thing that reaches it.
+ExecStart=/opt/ggmilad-admin/.venv/bin/uvicorn admin.main:app \
+    --host 127.0.0.1 \
+    --port 9914 \
+    --workers 1 \
+    --proxy-headers \
+    --forwarded-allow-ips 127.0.0.1 \
+    --log-level info
+
+Restart=always
+RestartSec=5
+TimeoutStopSec=20
+KillSignal=SIGINT
+
+# --- hardening ---
+NoNewPrivileges=true
+PrivateTmp=true
+PrivateDevices=true
+ProtectSystem=full
+ProtectHome=read-only
+ProtectKernelTunables=true
+ProtectKernelModules=true
+ProtectControlGroups=true
+RestrictSUIDSGID=true
+RestrictRealtime=true
+LockPersonality=true
+# writable: the repo working copy (content, backups, git) and the live site
+ReadWritePaths=/opt/ggmilad-admin /var/www/ggmilad
+
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=ggmilad-admin
+
+[Install]
+WantedBy=multi-user.target
