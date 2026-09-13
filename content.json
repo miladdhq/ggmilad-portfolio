@@ -263,7 +263,7 @@
       "tag": "SUPPORT / LIVE",
       "badge": "ship",
       "cat": "web",
-      "wide": false,
+      "wide": true,
       "extra_class": "card-donate",
       "hidden": true,
       "chips": [
