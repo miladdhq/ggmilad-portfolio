@@ -1,0 +1,777 @@
+{
+  "site": {
+    "donate_url": "https://donate.ggon.top"
+  },
+  "stats": [
+    {
+      "value": "22",
+      "suffix": "+",
+      "count": true,
+      "label": {
+        "fa": "پروژه تحویل‌شده",
+        "en": "projects shipped"
+      }
+    },
+    {
+      "value": "3",
+      "suffix": "+",
+      "count": true,
+      "label": {
+        "fa": "سال کدنویسی",
+        "en": "years coding"
+      }
+    },
+    {
+      "value": "∞",
+      "suffix": "",
+      "count": false,
+      "label": {
+        "fa": "لیوان قهوه",
+        "en": "cups of coffee"
+      }
+    }
+  ],
+  "roadmap": [
+    {
+      "id": "r1",
+      "kind": "active",
+      "tag": "▶ IN_PROGRESS",
+      "title": {
+        "fa": "لانچ عمومی GGnet",
+        "en": "GGnet public launch"
+      },
+      "body": {
+        "fa": "فروشگاه آماده‌ست، سرور خریداری شده. مرحله‌ی آخر: کانفیگ Nginx و PM2 — و بعدش، لایو.",
+        "en": "The store is ready and the server is bought. Final step: Nginx and PM2 config — then it goes live."
+      },
+      "progress": {
+        "label": "DEPLOY",
+        "percent": 85
+      }
+    },
+    {
+      "id": "r2",
+      "kind": "locked",
+      "tag": "LOCKED — LV.2",
+      "title": null,
+      "body": {
+        "fa": "یه چیزی با هوش مصنوعی... بیشتر از این نمی‌تونم بگم.",
+        "en": "Something with AI... that’s all I can say for now."
+      },
+      "progress": null
+    },
+    {
+      "id": "r3",
+      "kind": "locked",
+      "tag": "LOCKED — LV.3",
+      "title": null,
+      "body": {
+        "fa": "بزرگ‌ترین پروژه تا الان. صبر کن و ببین.",
+        "en": "The biggest project yet. Sit tight and watch."
+      },
+      "progress": null
+    }
+  ],
+  "projects": [
+    {
+      "id": "p1",
+      "mark": "🛒",
+      "tag": "E-COMMERCE / FLAGSHIP",
+      "badge": "launch",
+      "cat": "web",
+      "wide": true,
+      "extra_class": "",
+      "hidden": false,
+      "chips": [
+        "Next.js",
+        "TypeScript",
+        "Tailwind",
+        "shadcn/ui",
+        "Prisma"
+      ],
+      "title": {
+        "fa": "GGnet — فروشگاه محصولات دیجیتال",
+        "en": "GGnet — Digital Products Store"
+      },
+      "desc": {
+        "fa": "فروشگاه کامل با پرداخت کارت‌به‌کارت، تحویل خودکار کد بعد از تایید، پنل ادمین کامل و تم دارک RTL. از دیتابیس تا آخرین پیکسلِ UI، همه‌چیز از صفر طراحی و پیاده‌سازی شده.",
+        "en": "A complete store with card-to-card payments, automatic code delivery after approval, a full admin panel and an RTL dark theme. From the database to the last pixel of UI, everything designed and built from scratch."
+      },
+      "link": {
+        "url": "",
+        "label": {
+          "fa": "",
+          "en": ""
+        }
+      }
+    },
+    {
+      "id": "p7",
+      "mark": "🚘",
+      "tag": "DEALERSHIP / CLIENT WORK",
+      "badge": "launch",
+      "cat": "web",
+      "wide": true,
+      "extra_class": "",
+      "hidden": false,
+      "chips": [
+        "Next.js",
+        "TypeScript",
+        "Tailwind",
+        "Prisma"
+      ],
+      "title": {
+        "fa": "افراسان — وب‌سایت نمایشگاه خودرو",
+        "en": "Afrasan — Car Dealership Website"
+      },
+      "desc": {
+        "fa": "ویترین آنلاین نمایشگاه افراسان؛ جایی که فروشنده ماشین‌هاش رو با عکس و مشخصات کامل برای فروش می‌ذاره و مشتری بدون دردسر فیلتر می‌کنه و آگهی‌ای که می‌خواد رو پیدا می‌کنه. کنارِ ربات نمایشگاه، حالا آگهی‌ها یه خونهٔ درست‌وحسابی هم دارن.",
+        "en": "The online showroom for Afrasan: the dealer posts his cars for sale with photos and full specs, and buyers filter down to the listing they actually want without any friction. Next to the dealership bot, those listings finally have a proper home."
+      },
+      "link": {
+        "url": "",
+        "label": {
+          "fa": "",
+          "en": ""
+        }
+      }
+    },
+    {
+      "id": "p2",
+      "mark": "🍚",
+      "tag": "FOOD / UI",
+      "badge": "ship",
+      "cat": "web",
+      "wide": false,
+      "extra_class": "",
+      "hidden": false,
+      "chips": [
+        "JavaScript",
+        "CSS Animation",
+        "Creative UI"
+      ],
+      "title": {
+        "fa": "نون‌ونمک",
+        "en": "Noon o Namak"
+      },
+      "desc": {
+        "fa": "سایت غذای ایرانی که با ساعتِ روز حال‌وهواش عوض می‌شه — صبحونه، ناهار، شام. با رندومایزر غذا برای وقتایی که نمی‌دونی چی بخوری.",
+        "en": "A Persian food site whose whole mood shifts with the time of day — breakfast, lunch, dinner. Plus a meal randomizer for when you have no idea what to eat."
+      },
+      "link": {
+        "url": "",
+        "label": {
+          "fa": "",
+          "en": ""
+        }
+      }
+    },
+    {
+      "id": "p3",
+      "mark": "🎀",
+      "tag": "SHOP / SPA",
+      "badge": "ship",
+      "cat": "web",
+      "wide": false,
+      "extra_class": "",
+      "hidden": false,
+      "chips": [
+        "JavaScript",
+        "Admin Panel",
+        "SPA"
+      ],
+      "title": {
+        "fa": "سُروب",
+        "en": "Sorob"
+      },
+      "desc": {
+        "fa": "فروشگاه تک‌صفحه‌ای با حال‌وهوای کاوایی و پنل ادمین برای مدیریت محصول‌ها. کیوت، ولی زیرش یه ساختار جدی کار می‌کنه.",
+        "en": "A single-page shop with a kawaii mood and an admin panel for managing products. Cute on the surface, serious architecture underneath."
+      },
+      "link": {
+        "url": "",
+        "label": {
+          "fa": "",
+          "en": ""
+        }
+      }
+    },
+    {
+      "id": "p8",
+      "mark": "🪟",
+      "tag": "LIFE OS / ANDROID",
+      "badge": "ship",
+      "cat": "web",
+      "wide": false,
+      "extra_class": "",
+      "hidden": false,
+      "chips": [
+        "React",
+        "Capacitor",
+        "Android",
+        "Offline-first"
+      ],
+      "title": {
+        "fa": "روزنه — لایف‌او‌اس شخصی",
+        "en": "Rowzaneh — Personal Life OS"
+      },
+      "desc": {
+        "fa": "پنجره‌ای کوچک به روزی بهتر: چک‌این حال روزانه، عادت‌ها با رشتهٔ روزها، کارهای امروز و امتیاز روز. کاملاً آفلاین کار می‌کنه و با Capacitor به اپ اندروید تبدیل شده — همون یه سورس، هم توی مرورگر هم توی APK.",
+        "en": "A small window onto a better day: a daily mood check-in, habits with day streaks, today’s tasks and a score for the day. Fully offline, and packaged into an Android app with Capacitor — one source tree running both in the browser and inside the APK."
+      },
+      "link": {
+        "url": "",
+        "label": {
+          "fa": "",
+          "en": ""
+        }
+      }
+    },
+    {
+      "id": "p4",
+      "mark": "🐈",
+      "tag": "INTERACTIVE",
+      "badge": "ship",
+      "cat": "fun",
+      "wide": false,
+      "extra_class": "",
+      "hidden": false,
+      "chips": [
+        "JavaScript",
+        "Animation",
+        "Storytelling"
+      ],
+      "title": {
+        "fa": "پیشی‌لند",
+        "en": "Pishiland"
+      },
+      "desc": {
+        "fa": "دنیای تعاملی گربه‌ها — با یه گربه‌ی آشوب‌گر و خودشیفته به اسم میلاد و رفیق قدیمیش، علف هرز. جایی که خلاقیت هیچ سقفی نداره.",
+        "en": "An interactive cat world — starring a chaotic, self-obsessed cat named Milad and his old buddy, Weed the plant. A place where creativity has no ceiling."
+      },
+      "link": {
+        "url": "",
+        "label": {
+          "fa": "",
+          "en": ""
+        }
+      }
+    },
+    {
+      "id": "p23",
+      "mark": "🧡",
+      "tag": "SUPPORT / LIVE",
+      "badge": "ship",
+      "cat": "web",
+      "wide": false,
+      "extra_class": "card-donate",
+      "hidden": false,
+      "chips": [
+        "FastAPI",
+        "SQLite",
+        "Vanilla JS",
+        "nginx"
+      ],
+      "title": {
+        "fa": "حمایت — چراغِ پروژه‌ها",
+        "en": "Support — keeping the lights on"
+      },
+      "desc": {
+        "fa": "صفحه‌ی حمایتِ کارت‌به‌کارت با نوارِ هدف، دیوارِ حامی‌ها و پنلِ تایید. رسیدها بیرونِ webroot می‌شینن، EXIF‌شون پاک می‌شه و فقط با نشستِ ادمین خونده می‌شن. همین صفحه‌ایه که سرورِ پیشی‌لند رو روشن نگه می‌داره.",
+        "en": "A card-to-card donation page with a goal bar, a supporters wall and an approval panel. Receipts live outside the webroot, get their EXIF stripped, and are only readable with an admin session. It is the page that keeps the Pishiland server running."
+      },
+      "link": {
+        "url": "https://donate.ggon.top",
+        "label": {
+          "fa": "حمایت می‌کنم",
+          "en": "Support the work"
+        }
+      }
+    },
+    {
+      "id": "p9",
+      "mark": "🐕",
+      "tag": "GAME / CANVAS",
+      "badge": "ship",
+      "cat": "fun",
+      "wide": false,
+      "extra_class": "",
+      "hidden": false,
+      "chips": [
+        "Canvas 2D",
+        "JavaScript",
+        "Game Loop",
+        "localStorage"
+      ],
+      "title": {
+        "fa": "فرار پیشی",
+        "en": "Farar Pishi"
+      },
+      "desc": {
+        "fa": "یه گربهٔ نارنجی، فاضلاب شهر و یه مشت سگ هار. بازی بی‌پایان با پرشِ تک‌ضربه‌ای، سکه و لِوِل، فروشگاه گربه‌ها برای باز کردن شخصیت‌ها و جدول رکوردهایی که روی خود دستگاه ذخیره می‌شه.",
+        "en": "One orange cat, the city sewers, and a pack of rabid dogs. An endless runner with one-tap jumps, coins and levels, a cat shop for unlocking characters, and a high-score table kept right on the device."
+      },
+      "link": {
+        "url": "",
+        "label": {
+          "fa": "",
+          "en": ""
+        }
+      }
+    },
+    {
+      "id": "p5",
+      "mark": "📥",
+      "tag": "BOT / MEDIA",
+      "badge": "bot",
+      "cat": "bot",
+      "wide": false,
+      "extra_class": "",
+      "hidden": false,
+      "chips": [
+        "Python",
+        "yt-dlp",
+        "Telegram API"
+      ],
+      "title": {
+        "fa": "ربات دانلودر مدیا",
+        "en": "Media Downloader Bot"
+      },
+      "desc": {
+        "fa": "ربات تلگرام برای دانلود از شبکه‌های اجتماعی — لینک می‌فرستی، فایل تحویل می‌گیری. ساده، سریع، بدون حاشیه.",
+        "en": "A Telegram bot for downloading from social networks — send a link, get the file. Simple, fast, no fuss."
+      },
+      "link": {
+        "url": "",
+        "label": {
+          "fa": "",
+          "en": ""
+        }
+      }
+    },
+    {
+      "id": "p10",
+      "mark": "⚔️",
+      "tag": "REAL-TIME PVP / ENGINE",
+      "badge": "dev",
+      "cat": "fun",
+      "wide": true,
+      "extra_class": "",
+      "hidden": false,
+      "chips": [
+        "C# / .NET",
+        "Deterministic Sim",
+        "Unit Tests",
+        "Game Design"
+      ],
+      "title": {
+        "fa": "پیشی آرنا",
+        "en": "Pishi Arena"
+      },
+      "desc": {
+        "fa": "بازی موبایلیِ ۱ به ۱ و بلادرنگ، دوزبانه. هستهٔ شبیه‌سازی کاملاً قطعیه — همه‌چیز عدد صحیح، بدون اعشار — تا با یه seed و همون ورودی‌ها، ریپلی دقیقاً همون نتیجه رو بده. بالانس و متن‌ها توی دیتا زندگی می‌کنن، نه توی کد.",
+        "en": "A bilingual real-time 1v1 mobile game. The simulation core is fully deterministic — integers everywhere, no floats — so the same seed and the same inputs replay to an identical result. Balance numbers and strings live in data, never in gameplay code."
+      },
+      "link": {
+        "url": "",
+        "label": {
+          "fa": "",
+          "en": ""
+        }
+      }
+    },
+    {
+      "id": "p6",
+      "mark": "🚗",
+      "tag": "AI / AUTOMATION",
+      "badge": "bot",
+      "cat": "bot",
+      "wide": true,
+      "extra_class": "",
+      "hidden": false,
+      "chips": [
+        "Python",
+        "python-telegram-bot",
+        "Claude API",
+        "SQLite"
+      ],
+      "title": {
+        "fa": "ربات مدیریت نمایشگاه خودرو",
+        "en": "Car Dealership Manager Bot"
+      },
+      "desc": {
+        "fa": "ربات تلگرام برای مدیریت آگهی‌های نمایشگاه: عکس و مشخصات ماشین رو می‌گیره، با هوش مصنوعی Claude فیلدها رو خودکار استخراج می‌کنه و آگهی نهایی رو توی کانال و سوپرگروه منتشر می‌کنه. یه دستیار واقعی، نه فقط یه ربات.",
+        "en": "A Telegram bot that runs a dealership’s listings: it takes the car photos and specs, uses Claude AI to extract the fields automatically, and publishes the finished listing to the channel and supergroup. A real assistant, not just a bot."
+      },
+      "link": {
+        "url": "",
+        "label": {
+          "fa": "",
+          "en": ""
+        }
+      }
+    },
+    {
+      "id": "p11",
+      "mark": "📖",
+      "tag": "POETRY / TYPOGRAPHY",
+      "badge": "ship",
+      "cat": "fun",
+      "wide": true,
+      "extra_class": "",
+      "hidden": false,
+      "chips": [
+        "JavaScript",
+        "Nastaliq",
+        "Canvas 2D",
+        "Web Audio"
+      ],
+      "title": {
+        "fa": "دیوان — فال حافظ",
+        "en": "Divan — a Hafez reading"
+      },
+      "desc": {
+        "fa": "نیّت می‌کنی، کتاب باز می‌شود و یک غزل با تعبیرش می‌آید. شعر با خطِ نستعلیقِ واقعی چیده شده و رنگ‌ها از تذهیبِ نسخه‌های خطی آمده: لاجورد و طلا روی شبِ کاغذ. فال‌ها را نگه می‌داری یا به‌شکل تصویر بیرون می‌دهی.",
+        "en": "Hold a question in mind, open the book, and a ghazal arrives with a plain-language reading. The poetry is set in real Nastaliq and the palette comes from manuscript illumination — lapis and gold on an ink-dark ground. Keep the readings, or export one as an image."
+      },
+      "link": {
+        "url": "",
+        "label": {
+          "fa": "",
+          "en": ""
+        }
+      }
+    },
+    {
+      "id": "p12",
+      "mark": "🎚",
+      "tag": "AUDIO / CANVAS",
+      "badge": "ship",
+      "cat": "fun",
+      "wide": true,
+      "extra_class": "",
+      "hidden": false,
+      "chips": [
+        "Web Audio API",
+        "Canvas 2D",
+        "JavaScript"
+      ],
+      "title": {
+        "fa": "موج — اتاق صدا",
+        "en": "Mowj — the sound room"
+      },
+      "desc": {
+        "fa": "آهنگ را می‌اندازی و شکلش را می‌بینی: سه نما، چهار رنگ‌بندی، دنباله‌ی حرکت و جرقه‌هایی که روی ضربانِ باس می‌نشینند. بندهای فرکانس لگاریتمی‌اند نه خطی — چون گوش هم همین‌طور می‌شنود. آخرش یک پوسترِ چاپی از کلِ آهنگ می‌گیری.",
+        "en": "Drop a track and see its shape: three views, four palettes, motion trails, and sparks that land on the bass beat. Frequencies are binned logarithmically rather than linearly, because that is how hearing works. At the end you get a print-ready poster of the whole track."
+      },
+      "link": {
+        "url": "",
+        "label": {
+          "fa": "",
+          "en": ""
+        }
+      }
+    },
+    {
+      "id": "p13",
+      "mark": "✳",
+      "tag": "GENERATIVE / SVG",
+      "badge": "ship",
+      "cat": "tool",
+      "wide": false,
+      "extra_class": "",
+      "hidden": false,
+      "chips": [
+        "SVG",
+        "Canvas 2D",
+        "Geometry",
+        "JavaScript"
+      ],
+      "title": {
+        "fa": "نقش‌خانه — گره‌سازی",
+        "en": "Naghsh-khaneh — a girih studio"
+      },
+      "desc": {
+        "fa": "نقش‌های هندسیِ ایرانی را می‌سازی: ستاره‌های ۶ تا ۱۲ پر، شبکه‌ی چهارگوش یا شش‌گوش، و شش رنگ‌بندی از کاشی‌کاری. خروجی SVGِ واقعی است نه عکس، چون هندسه یک‌بار ساخته می‌شود و همان مدل هم روی بوم می‌رود هم به SVG.",
+        "en": "Build Persian geometric patterns — 6 to 12-fold stars, square or hexagonal lattice, six palettes taken from tilework. The export is true vector SVG rather than an image, because the geometry is built once and that same model renders to canvas or serialises to SVG."
+      },
+      "link": {
+        "url": "",
+        "label": {
+          "fa": "",
+          "en": ""
+        }
+      }
+    },
+    {
+      "id": "p14",
+      "mark": "✒",
+      "tag": "CALLIGRAPHY / CANVAS",
+      "badge": "ship",
+      "cat": "fun",
+      "wide": false,
+      "extra_class": "",
+      "hidden": false,
+      "chips": [
+        "Canvas 2D",
+        "Pointer Events",
+        "JavaScript"
+      ],
+      "title": {
+        "fa": "خوشنویس — مشقِ قلم‌نی",
+        "en": "Khoshnevis — reed-pen practice"
+      },
+      "desc": {
+        "fa": "قلم‌نی شبیه‌سازی شده: نوکِ قلم یک پاره‌خط است با زاویه‌ی ثابت، پس پهنای خط از خودِ هندسه درمی‌آید — عمود بر نوک کلفت، موازی با آن مو. همان چیزی که به حرف‌های فارسی ریتمِ کلفت‌ونازکشان را می‌دهد.",
+        "en": "A simulated reed pen: the nib is a line segment held at a fixed angle, so stroke width falls out of the geometry — thick across the nib, hairline along it. That is exactly what gives Persian letterforms their thick-and-thin rhythm."
+      },
+      "link": {
+        "url": "",
+        "label": {
+          "fa": "",
+          "en": ""
+        }
+      }
+    },
+    {
+      "id": "p15",
+      "mark": "🔡",
+      "tag": "GAME / DAILY",
+      "badge": "ship",
+      "cat": "fun",
+      "wide": false,
+      "extra_class": "",
+      "hidden": false,
+      "chips": [
+        "JavaScript",
+        "RTL",
+        "localStorage"
+      ],
+      "title": {
+        "fa": "واژک — واژه‌بازی روزانه",
+        "en": "Vazhak — a daily Persian word game"
+      },
+      "desc": {
+        "fa": "هر روز یک واژه‌ی پنج‌حرفی فارسی و شش فرصت؛ با حالت سخت، آمار و رشته‌ی برد، و نتیجه‌ای که با ایموجی رونوشت می‌شود. سختیِ واقعی‌اش نرمال‌سازیِ فارسی است: «ي» و «ك» عربی و نیم‌فاصله نباید غلط حساب شوند.",
+        "en": "One five-letter Persian word a day, six tries, with a hard mode, statistics, streaks and an emoji result card. The genuinely hard part is Persian normalisation: Arabic ي and ك and the zero-width non-joiner must not count as mistakes."
+      },
+      "link": {
+        "url": "",
+        "label": {
+          "fa": "",
+          "en": ""
+        }
+      }
+    },
+    {
+      "id": "p16",
+      "mark": "⌨",
+      "tag": "TYPING / METRICS",
+      "badge": "ship",
+      "cat": "fun",
+      "wide": false,
+      "extra_class": "",
+      "hidden": false,
+      "chips": [
+        "JavaScript",
+        "SVG",
+        "RTL"
+      ],
+      "title": {
+        "fa": "تندنویس — سرعت تایپ فارسی",
+        "en": "Tondnevis — Persian typing test"
+      },
+      "desc": {
+        "fa": "سرعت و دقتِ تایپ فارسی را می‌سنجد: WPM و دقتِ زنده، منحنیِ سرعت در طول آزمون، و حرف‌هایی که بیشتر غلط می‌زنی. یکنواختی هم حساب می‌شود — انحرافِ معیارِ سرعت نسبت به میانگینش.",
+        "en": "Measures Persian typing speed and accuracy: live WPM, a speed curve across the run, and the letters you miss most. Consistency is computed too — the standard deviation of your speed against its own mean."
+      },
+      "link": {
+        "url": "",
+        "label": {
+          "fa": "",
+          "en": ""
+        }
+      }
+    },
+    {
+      "id": "p17",
+      "mark": "📅",
+      "tag": "CALENDAR / ALGORITHM",
+      "badge": "ship",
+      "cat": "tool",
+      "wide": false,
+      "extra_class": "",
+      "hidden": false,
+      "chips": [
+        "JavaScript",
+        "Jalali Calendar",
+        "Algorithms"
+      ],
+      "title": {
+        "fa": "سالنما — تقویم ایرانی",
+        "en": "Salnama — the Persian calendar"
+      },
+      "desc": {
+        "fa": "تقویم هجری شمسی با تعطیلات رسمی، یادداشت روزانه و تبدیل تاریخ؛ رنگِ تأکید با فصلِ ماه عوض می‌شود. تبدیلِ جلالی با الگوریتم برکوفسکی نوشته شده و رفت‌وبرگشتِ همه‌ی روزهای ۱۳۸۰ تا ۱۴۲۰ آزموده شده.",
+        "en": "The Solar Hijri calendar with official holidays, day notes and a date converter; the accent colour follows the season of the month. The Jalali conversion uses Borkowski's algorithm and round-trips every single day from 1380 to 1420."
+      },
+      "link": {
+        "url": "",
+        "label": {
+          "fa": "",
+          "en": ""
+        }
+      }
+    },
+    {
+      "id": "p18",
+      "mark": "🧭",
+      "tag": "ASTRONOMY / OFFLINE",
+      "badge": "ship",
+      "cat": "tool",
+      "wide": false,
+      "extra_class": "",
+      "hidden": false,
+      "chips": [
+        "JavaScript",
+        "Astronomy",
+        "SVG"
+      ],
+      "title": {
+        "fa": "اوقات — نماز و قبله",
+        "en": "Owqat — prayer times & qibla"
+      },
+      "desc": {
+        "fa": "اوقات شرعی و جهت قبله، همه روی همین دستگاه. به‌جای صدا زدنِ یک API، موقعیتِ خورشید حساب می‌شود — میل و معادله‌ی زمان — و قبله از آزیموتِ دایره‌ی عظیمه. بدون اینترنت کار می‌کند و موقعیتت جایی فرستاده نمی‌شود.",
+        "en": "Prayer times and the qibla bearing, all on the device. Instead of calling an API it computes the sun's position — declination and the equation of time — and the qibla as a great-circle azimuth. It works with no connection, and your location is never sent anywhere."
+      },
+      "link": {
+        "url": "",
+        "label": {
+          "fa": "",
+          "en": ""
+        }
+      }
+    },
+    {
+      "id": "p19",
+      "mark": "🎨",
+      "tag": "COLOR / A11Y",
+      "badge": "ship",
+      "cat": "tool",
+      "wide": false,
+      "extra_class": "",
+      "hidden": false,
+      "chips": [
+        "JavaScript",
+        "WCAG",
+        "Color Science"
+      ],
+      "title": {
+        "fa": "رنگین — کارگاه رنگ",
+        "en": "Rangin — a colour workshop"
+      },
+      "desc": {
+        "fa": "پالت می‌سازی، کنتراستش را با معیارِ WCAG می‌سنجی، و می‌بینی کسی که کوررنگ است چه می‌بیند. شبیه‌سازیِ کوررنگی روی RGBِ خطی انجام می‌شود نه روی مقدارِ گاما — همان اشتباهِ رایجی که رنگ را غلط نشان می‌دهد.",
+        "en": "Build a palette, measure its contrast against WCAG, and see what a colour-blind viewer sees. The simulation runs on linear RGB rather than gamma-encoded values — the common mistake that renders the colours wrong."
+      },
+      "link": {
+        "url": "",
+        "label": {
+          "fa": "",
+          "en": ""
+        }
+      }
+    },
+    {
+      "id": "p20",
+      "mark": "📊",
+      "tag": "FINANCE / DATA VIZ",
+      "badge": "ship",
+      "cat": "tool",
+      "wide": false,
+      "extra_class": "",
+      "hidden": false,
+      "chips": [
+        "SVG",
+        "Data Viz",
+        "JavaScript"
+      ],
+      "title": {
+        "fa": "حساب‌کتاب — خرج ماه",
+        "en": "Hesab-Ketab — where the money went"
+      },
+      "desc": {
+        "fa": "خرجِ ماه را ثبت می‌کنی و می‌بینی پول کجا رفت: میله‌ی ترکیب، دسته‌ها از بیشترین، و ستون‌های روزانه. ماه‌ها شمسی‌اند. پالتِ نمودار سنجیده شده و چون سه رنگش کنتراستِ کافی ندارند، هر نشانه برچسبِ مستقیم دارد و نمای جدول هم هست.",
+        "en": "Log what you spend and see where it went: a composition bar, categories ranked largest first, and daily columns. Months are Solar Hijri. The chart palette was validated, and because three of its hues fall short on contrast, every mark carries a direct label and a table view exists."
+      },
+      "link": {
+        "url": "",
+        "label": {
+          "fa": "",
+          "en": ""
+        }
+      }
+    },
+    {
+      "id": "p21",
+      "mark": "📄",
+      "tag": "DOCUMENT / PRINT CSS",
+      "badge": "ship",
+      "cat": "tool",
+      "wide": false,
+      "extra_class": "",
+      "hidden": false,
+      "chips": [
+        "Print CSS",
+        "JavaScript",
+        "A4"
+      ],
+      "title": {
+        "fa": "رزومه‌ساز — یک رزومه‌ی تمیز",
+        "en": "Rezume-saz — a clean resume"
+      },
+      "desc": {
+        "fa": "فرم را پر می‌کنی و برگه‌ی A4 زنده جلوی چشمت ساخته می‌شود. مهارتِ اصلی‌اش چاپ است: ‎@page اندازه و حاشیه را می‌گیرد، break-inside نمی‌گذارد یک سابقه وسطِ صفحه دو تکه شود، و رنگ روی کاغذ هم می‌ماند.",
+        "en": "Fill in the form and an A4 sheet builds itself beside you. The real skill is the printing: @page owns the size and margins, break-inside stops a job being sliced across two pages, and the accent colour survives onto paper."
+      },
+      "link": {
+        "url": "",
+        "label": {
+          "fa": "",
+          "en": ""
+        }
+      }
+    },
+    {
+      "id": "p22",
+      "mark": "🧩",
+      "tag": "PLANNER / DRAG & DROP",
+      "badge": "ship",
+      "cat": "tool",
+      "wide": false,
+      "extra_class": "",
+      "hidden": false,
+      "chips": [
+        "Pointer Events",
+        "JavaScript",
+        "RTL"
+      ],
+      "title": {
+        "fa": "واحدچین — برنامه‌ی ترم",
+        "en": "Vahed-chin — a term planner"
+      },
+      "desc": {
+        "fa": "برای فصلِ انتخاب واحد: درس را می‌کشی روی جدولِ هفته و تداخل‌ها همان لحظه قرمز می‌شوند. جلسه‌های هم‌پوشان کنارِ هم می‌نشینند تا ببینی با چه چیزی تداخل داری، و درس‌های پشتِ‌سرِ‌هم تداخل حساب نمی‌شوند.",
+        "en": "For course-registration season: drag a course onto the week and clashes turn red the moment they happen. Overlapping sessions sit side by side so you can see what you are colliding with — and back-to-back classes are correctly not counted as a clash."
+      },
+      "link": {
+        "url": "",
+        "label": {
+          "fa": "",
+          "en": ""
+        }
+      }
+    }
+  ]
+}

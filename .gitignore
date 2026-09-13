@@ -10,3 +10,11 @@ Thumbs.db
 *.backup.html
 *.bak
 *.orig
+
+# admin app runtime
+.venv/
+.env
+data/
+__pycache__/
+.pytest_cache/
+*.pyc
